@@ -61,10 +61,7 @@ public class Main {
 
         Map<String, Long> people = getStringLongMap(RAW_DATA);
 
-
-        for (Map.Entry<String, Long> entry : people.entrySet()) {
-            System.out.println(entry.getKey() + " - " + entry.getValue());
-        }
+        people.forEach((key, value) -> System.out.println(key + " - " + value));
     }
 
     private static Map<String, Long> getStringLongMap(Person[] arrayPerson) {
