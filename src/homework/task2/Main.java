@@ -20,7 +20,7 @@ public class Main {
                 .toArray(Integer[]::new);
 
         for (int i = 0; i < filterArray.length - 1; i++) {
-                for (int j = i; j < filterArray.length; j++) {
+                for (int j = i + 1; j < filterArray.length; j++) {
                     if (filterArray[i] + filterArray[j] == goal) {
                         return new Integer[] {filterArray[i], filterArray[j]};
                     }
